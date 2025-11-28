@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login proyecto</title>
+    <link rel="stylesheet" href="Proyecto.css">
+    <link href='imagen.png' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="wrapper">
+      <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+           <input type="text" placeholder="Nombre" required>
+           <i class='bx bx-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Contraseña" required>
+            <i class='bx bx-lock-alt'></i>
+        </div>
+        
+        <div class="remember-forgot">
+            <a href="#">Has olvidado tu contraseña?</a>
+        </div>
+        
+        <button type="submit" class="btn">Entrar</button>
+
+        <div class="register-link"></div>
+           <p>No tengo una cuenta <a href="#">Registrarse</a></p>
+      </form>
+    </div>
+
+</body>
+</html>
+
+
+
+<script></script>
+
+// Función para validar el formulario de inicio de sesión
+function validateLogin() {
+    // Obtener valores de los campos de entrada
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const errorMessage = document.getElementById('error-message');
+  
+    // Validar si ambos campos están llenos
+    if (username === '' || password === '') {
+      // Mostrar mensaje de error si los campos están vacíos
+      errorMessage.style.display = 'block';
+    } else {
+      // Ocultar mensaje de error si ambos campos están llenos
+      errorMessage.style.display = 'none';
+      alert('Inicio de sesión exitoso');
+      // Aquí podrías redirigir al usuario o realizar alguna acción adicional
+    }
+  }
+  
+
+
+  CSS
+
+  

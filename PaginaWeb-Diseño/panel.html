@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .module {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .module:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .module img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .module h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Modulo de Inventarios</h1>
+    </div>
+
+    <div class="dashboard">
+        <div class="module" onclick="alert('Nueva Categoría')">
+            <img src="IMG.panel/registro.png" alt="Nueva Categoría">
+            <h3>Nueva Categoría</h3>
+        </div>
+        <div class="module" onclick="alert('Nuevo Proveedor')">
+            <img src="IMG.panel/monitoring_12062340.png" alt="Nuevo Proveedor">
+            <h3>Nuevo Proveedor</h3>
+        </div>
+        <div class="module" onclick="alert('Nuevo Cliente')">
+            <img src="IMG.panel/clock_14038270.png" alt="Nuevo Cliente">
+            <h3>Nuevo Cliente</h3>
+        </div>
+        <div class="module" onclick="alert('Nuevo Producto')">
+            <img src="IMG.panel/procurement_18558193.png" alt="Nuevo Producto">
+            <h3>Nuevo Producto</h3>
+        </div>
+        <div class="module" onclick="alert('Nuevo Precio')">
+            <img src="IMG.panel/Nueva compra.png" alt="Nuevo Precio">
+            <h3>Nuevo Precio</h3>
+        </div>
+        <div class="module" onclick="alert('Nueva Compra')">
+            <img src="IMG.panel/inventario.png" alt="Nueva Compra">
+            <h3>Nueva Compra</h3>
+        </div>
+        <div class="module" onclick="alert('Nueva Venta')">
+            <img src="IMG.panel/proveedor.png" alt="Nueva Venta">
+            <h3>Nueva Venta</h3>
+        </div>
+    </div>
+
+    <script>
+        // Aquí puedes agregar funcionalidad dinámica si es necesario
+    </script>
+</body>
+</html>
